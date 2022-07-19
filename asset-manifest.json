@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/rnld/static/css/main.e715de8a.css",
-    "main.js": "/rnld/static/js/main.b74dbfac.js",
+    "main.css": "/rnld/static/css/main.613cfb3f.css",
+    "main.js": "/rnld/static/js/main.965ec294.js",
     "static/media/prof.png": "/rnld/static/media/prof.76c526cdfb49ae9c2ac9.png",
     "static/media/2x2.jpg": "/rnld/static/media/2x2.5490908729dc8f5822de.jpg",
     "static/media/project1.webp": "/rnld/static/media/project1.d38fb387e8c1f9fb1ba4.webp",
     "static/media/SANDAGON, RONALD (CV).pdf": "/rnld/static/media/SANDAGON, RONALD (CV).27d35a59c6e8c892bda5.pdf",
     "static/media/close-btn.png": "/rnld/static/media/close-btn.8d5c0be67537a4fdaac0.png",
     "index.html": "/rnld/index.html",
-    "main.e715de8a.css.map": "/rnld/static/css/main.e715de8a.css.map",
-    "main.b74dbfac.js.map": "/rnld/static/js/main.b74dbfac.js.map"
+    "main.613cfb3f.css.map": "/rnld/static/css/main.613cfb3f.css.map",
+    "main.965ec294.js.map": "/rnld/static/js/main.965ec294.js.map"
   },
   "entrypoints": [
-    "static/css/main.e715de8a.css",
-    "static/js/main.b74dbfac.js"
+    "static/css/main.613cfb3f.css",
+    "static/js/main.965ec294.js"
   ]
 }
