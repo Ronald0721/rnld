@@ -48,6 +48,8 @@ function Portfolio() {
                     <h3>To-Do List</h3>
                     <img src={P1b} alt="model-img" />
                     <p>Designed to help you stay organized and on top of your tasks. With a user-friendly interface you can easily create and manage your to-do lists. Whether you're a busy professional, a student, or just someone looking to stay on top of their to-dos, this app is the perfect solution for managing your tasks and staying productive.</p>
+                    <br />
+                    <h4><a  href="https://60ymvv.csb.app/" target="_blank" rel="noreferrer">Live Demo   </a><i className="fas fa-long-arrow-alt-right"></i></h4>
                   </div>
                 </div>
             </div>
@@ -66,6 +68,8 @@ function Portfolio() {
                     <h3>Keeper</h3>
                     <img src={P2b} alt="model-img" />
                     <p>Designed for organizing and managing your notes, ideas, and information. It's an essential tool for students, professionals, and anyone looking to keep their thoughts, information and ideas organized and accessible anytime, anywhere.</p>
+                    <br />
+                    <h4><a  href="https://z82ivs.csb.app/" target="_blank" rel="noreferrer">Live Demo   </a><i className="fas fa-long-arrow-alt-right"></i></h4>
                   </div>
                 </div>
             </div>
@@ -83,7 +87,9 @@ function Portfolio() {
                     <i className="fas fa-times portfolio-close-btn" onClick={handleCloseModals}></i>
                     <h3>Simon Game</h3>
                     <img src={P3b} alt="model-img" />
-                    <p>A Simon game is an electronic game of memory skill. The device creates a series of tones and lights and requires a user to repeat the sequence. The user has to repeat the sequence correctly before the sequence becomes longer and more complex, and the user has to remember the correct sequence to repeat it correctly. The game typically has four colored buttons, each producing a particular tone when it is pressed or lit. The object of the game is to repeat the sequence of lights and tones that the device generates in the correct order. </p>
+                    <p>Simon game is a game of memory skill. It creates a series of tones and lights and requires a user to repeat the sequence. The game typically has four colored buttons, each producing a particular tone when it is pressed or lit. The user has to repeat the sequence correctly before the sequence becomes longer and more complex, and the user has to remember the correct sequence to repeat it correctly. </p>
+                    <br />
+                    <h4><a  href="https://ronald0721.github.io/simon/" target="_blank" rel="noreferrer">Live Demo   </a><i className="fas fa-long-arrow-alt-right"></i></h4>
                   </div>
                 </div>
             </div>
