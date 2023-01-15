@@ -8,6 +8,7 @@ import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">

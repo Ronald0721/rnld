@@ -27,8 +27,8 @@ const Contact = () => {
             <h2>Let's discuss your projects</h2>
             <ul className='contact-list'>
               <li>
-                <h3 className="item-title"><i className="fas fa-phone"></i>Phone</h3>
-                <span>+639057053176</span>
+                <h3 className="item-title"><i className="fas fa-phone"></i>Viber</h3>
+                <span><a href="viber://contact?number=%2B639057053176" target="_blank" rel="noreferrer">+639057053176</a></span>
               </li>
               <li>
                 <h3 className="item-title"><i className="fas fa-envelope"></i>Email</h3>
@@ -36,7 +36,7 @@ const Contact = () => {
               </li>
               <li>
                 <h3 className="item-title"><i className="fa-brands fa-facebook-messenger"></i>Messenger</h3>
-                <span>Ronald Abarquez Sandagon</span>
+                <span><a href='http://m.me/sandagon.ronald.abarquez' target="_blank" rel="noreferrer">Ronald Abarquez Sandagon</a></span>
               </li>
             </ul>
           </div>

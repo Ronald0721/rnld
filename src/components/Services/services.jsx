@@ -1,29 +1,35 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./services.css";
 
-function services() {
+function Services() {
 //Services section - Modal
-const serviceModals = document.querySelectorAll(".service-modal");
-const learnmoreBtns = document.querySelectorAll(".learn-more-btn");
-const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
+// const serviceModals = document.querySelectorAll(".service-modal");
+// const learnmoreBtns = document.querySelectorAll(".learn-more-btn");
+// const modalCloseBtns = document.querySelectorAll(".modal-close-btn");
 
-var modal = function (modalClick) {
-    serviceModals[modalClick].classList.add("active");
-  }
+// var modal = function (modalClick) {
+//     serviceModals[modalClick].classList.add("active");
+//   }
 
-  learnmoreBtns.forEach((learnmoreBtn, i) => {
-    learnmoreBtn.addEventListener("click", () => {
-        modal(i);
-    });
-  });
+//   learnmoreBtns.forEach((learnmoreBtn, i) => {
+//     learnmoreBtn.addEventListener("click", () => {
+//         modal(i);
+//     });
+//   });
 
-  modalCloseBtns.forEach((modalCloseBtn) => {
-    modalCloseBtn.addEventListener("click", () => {
-        serviceModals.forEach((modalView) => {
-            modalView.classList.remove("active")
-        });
-    });
-  });
+//   modalCloseBtns.forEach((modalCloseBtn) => {
+//     modalCloseBtn.addEventListener("click", () => {
+//         serviceModals.forEach((modalView) => {
+//             modalView.classList.remove("active")
+//         });
+//     });
+//   });
+
+const [isActive, setIsActive] = useState(false);
+
+const handleToggle = () => {
+  setIsActive(!isActive);
+};
   
   return (
     <section className="services section" id="services">
@@ -39,11 +45,11 @@ var modal = function (modalClick) {
                         <div className="service-card">
                             <i className="fas fa-file-code"></i>
                             <h3>Web Develoment</h3>
-                            <div className="learn-more-btn">Learn More <i className="fas fa-long-arrow-alt-right"></i></div>
+                            <div className="learn-more-btn" onClick={handleToggle}>Learn More <i className="fas fa-long-arrow-alt-right"></i></div>
                         </div>
-                        <div className="service-modal flex-center">
+                        <div className={isActive ? "service-modal flex-center active" : "service-modal flex-center"}>
                             <div className="service-modal-body">
-                                <i className="fas fa-times modal-close-btn"></i>
+                                <i className="fas fa-times modal-close-btn" onClick={handleToggle}></i>
                                 <h3>Web Development </h3>
                                 <h4>What is Web Development?</h4>
                                 <p>Web development services are used to design, build, support, and evolve all types of web-based software.</p>
@@ -63,4 +69,4 @@ var modal = function (modalClick) {
   )
 }
 
-export default services
+export default Services

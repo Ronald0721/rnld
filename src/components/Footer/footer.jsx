@@ -7,8 +7,8 @@ function footer() {
     <footer>
         <div className="footer-container">
             <div className="about group">
-                <h2>Ronald</h2>
-                <p>Front-end Developer</p>
+                <h2><a href='#home'>Ronald</a></h2>
+                <p>Front-End Developer</p>
                 <a href="#about">About Me</a>
             </div>
             <div className="hr"></div>
@@ -25,9 +25,9 @@ function footer() {
             <div className="follow group">
                 <h3>Follow</h3>
             <ul>
-                <li><a href="http:/facebook.com"><i className="fab fa-facebook-f"></i></a></li>
-                <li><a href="http:/instagram.com"><i className="fab fa-instagram"></i></a></li>
-                <li><a href="http:/twitter.com"><i className="fab fa-twitter"></i></a></li>
+                <li><a href="https://www.facebook.com/sandagon.ronald.abarquez"  target="_blank" rel="noreferrer"><i className="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://www.instagram.com/as._.ronald/"  target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a></li>
+                <li><a href="http:/twitter.com"  target="_blank" rel="noreferrer"><i className="fab fa-twitter"></i></a></li>
             </ul>
             </div>
         </div>

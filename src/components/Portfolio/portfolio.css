@@ -1,6 +1,6 @@
 .portfolio .container .content {
     width: 100%;
-    }
+}
 
 .portfolio-list {
     display: grid;
@@ -45,7 +45,7 @@
 }
     
 .portfolio-list .img-card:hover .info {
-    transition: translateY(0);
+    transform: translateY(0);
     opacity: 1;
 }
 

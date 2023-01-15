@@ -6,6 +6,8 @@
     margin-right: auto;
     padding: 4rem 2rem;
     flex-direction: column;
+    color: var(--first-color);
+    background: var(--body-bg-color);
 }
 
 .home .home-container {
@@ -94,6 +96,56 @@
     animation: arrow-down ease 2s infinite;
 }
 
+/* =======Light/Dark theme button=======*/
+.theme-btn{
+    z-index: 999999;
+    position: fixed;
+    right: 0;
+    background: var(--transparent-color-01);
+    backdrop-filter: blur(20px);
+    top: 100px;
+    width: 50px;
+    height: 50px;
+    font-size: 1.2em;
+    border-radius: 5px 0 0 5px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+/* .theme-btn .fa-sun, .theme-btn.sun .fa-moon {
+    display: none;
+}
+
+.theme-btn.sun .fa-sun {
+    display: block;
+} */
+
+.dark-theme {
+    /*=======Main theme colors=======*/
+  --first-color: #fff;
+  --second-color: #2D6BB4;
+  --third-color: #a9afc3;
+
+  /*=======Hover colors=======*/
+  --hover-color: #3D95DF;
+
+  /*=======Background colors=======*/
+  --body-bg-color: #0e1b31;
+  --card-bg-color: #132347;
+  --modal-bg-color: #102048;
+  --bg-transparent-color: rgba(255,255,255,255, 0.1);
+  --transparent-color-01: rgba(255,255,255,255, 0.1);
+  --line-color: #454f6b;
+
+  /*=======Color Filter=======*/
+  --color-filter: invert(0);
+
+  /*=======Scroll bar colors=======*/
+  --scroll-bar-color: #c1ceff;
+  --scroll-thumb-color: #282f4e;
+  --scroll-thumb-hover-color: #454f6b;
+}
+
 @keyframes arrow-down{
     0% {
       transform: translateY(0);  
@@ -115,65 +167,16 @@
     font-size: var(--small-font-size);
     border-radius: 3px;
     cursor: pointer;
-    opacity: 0;
-    transition: .5s ease;
+    right: 20px; /* Modify */
+    /* opacity: 0;
+    transition: .5s ease; */
 }
 
-.scrollToTop-btn.active{
+/* .scrollToTop-btn.active{
     right: 20px;
     pointer-events: all;
     opacity: 1;
-}
-
-/* =======Light/Dark theme button=======*/
-.theme-btn{
-    z-index: 999999;
-    position: fixed;
-    right: 0;
-    background: var(--transparent-color-01);
-    backdrop-filter: blur(20px);
-    top: 100px;
-    width: 50px;
-    height: 50px;
-    font-size: 1.2em;
-    border-radius: 5px 0 0 5px;
-    box-shadow: var(--box-shadow);
-    cursor: pointer;
-}
-
-.theme-btn .fa-sun, .theme-btn.sun .fa-moon {
-    display: none;
-}
-
-.theme-btn.sun .fa-sun {
-    display: block;
-}
-
-.dark-theme {
-    /*=======Main theme colors=======*/
-  --first-color: #fff;
-  --second-color: #2D6BB4;
-  --third-color: #a9afc3;
-
-  /*=======Hover colors=======*/
-  --hover-color: #3D95DF;
-
-  /*=======Background colors=======*/
-  --body-bg-color: #0e1b31;
-  --card-bg-color: #132347;
-  --modal-bg-color: #102048;
-  --bg-transparent-color: rgba(2555,2555,2555,2555.1);
-  --transparent-color-01: rgba(2555,2555,2555,2555.1);
-  --line-color: #454f6b;
-
-  /*=======Color Filter=======*/
-  --color-filter: invert(0);
-
-  /*=======Scroll bar colors=======*/
-  --scroll-bar-color: #c1ceff;
-  --scroll-thumb-color: #282f4e;
-  --scroll-thumb-hover-color: #454f6b;
-}
+} */
 
 @media screen and (max-width: 1070px){
     .home .home-container .info {

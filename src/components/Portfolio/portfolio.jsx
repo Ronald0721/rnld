@@ -1,30 +1,31 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./portfolio.css";
-import IMG from "../assets/project1.webp";
+import P1a from "../Assets/TD.png";
+import P1b from "../Assets/TD L.png";
+import P2a from "../Assets/Keeper.png";
+import P2b from "../Assets/Keeper N.png";
+import P3a from "../Assets/Simon.png";
+import P3b from "../Assets/Simon G.png";
 
-function portfolio() {
-  //Portfolio section - Modal
-  const portfolioModels = document.querySelectorAll(".portfolio-model");
-  const imgCards = document.querySelectorAll(".img-card");
-  const portfolioCloseBtns = document.querySelectorAll(".portfolio-close-btn");
-
-  var portfolioModal = function (modalClick) {
-    portfolioModels[modalClick].classList.add("active");
+function Portfolio() {
+  const [modals, setModals] = useState({
+    modal1: false,
+    modal2: false,
+    modal3: false
+  });
+  
+  const handleModal = (modal) => {
+      setModals({ ...modals, [modal]: !modals[modal] });
   }
 
-  imgCards.forEach((imgCard, i) => {
-    imgCard.addEventListener("click", () => {
-        portfolioModal(i);
+  const handleCloseModals = () => {
+    setModals({
+      modal1: false,
+      modal2: false,
+      modal3: false
     });
-  });
+  }
 
-  portfolioCloseBtns.forEach((portfolioCloseBtn) => {
-    portfolioCloseBtn.addEventListener("click", () => {
-        portfolioModels.forEach((portfolioModalView) => {
-            portfolioModalView.classList.remove("active")
-        });
-    });
-  });
   return (
     <section id="portfolio" className='portfolio section'>
       <div className="container flex-center">
@@ -33,20 +34,56 @@ function portfolio() {
         <div className="content">
           <div className="portfolio-list">
             <div className="img-card-container">
-              <div className="img-card">
+              <div className="img-card" onClick={() => handleModal('modal1')}>
                 <div className="overlay"></div>
                 <div className="info">
-                  <h3>Web Design</h3>
-                  <span>Youtube</span>
+                  <h3>To-Do List</h3>
+                  <span>Manage Your Tasks and Priorities</span>
                 </div>
-                <img src={IMG} alt="project-img" />
+                <img src={P1a} alt="project-img" />
               </div>
-                <div className="portfolio-model flex-center">
+                <div className={`modal ${modals.modal1 ? 'show active portfolio-model flex-center' : 'hide portfolio-model flex-center'}`} >
                   <div className="portfolio-model-body">
-                    <i className="fas fa-times portfolio-close-btn"></i>
-                    <h3>Web Design</h3>
-                    <img src={IMG} alt="model-img" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat perferendis at ad. Deserunt, assumenda. Porro assumenda in quam reiciendis, quis nam impedit, amet, ipsam illo repellendus fugiat. Laudantium quod ea optio alias voluptate ullam vel nostrum ipsa libero officia, dolore ipsam animi! Voluptate sit mollitia molestias deleniti dolorem sequi blanditiis.</p>
+                    <i className="fas fa-times portfolio-close-btn" onClick={handleCloseModals}></i>
+                    <h3>To-Do List</h3>
+                    <img src={P1b} alt="model-img" />
+                    <p>Designed to help you stay organized and on top of your tasks. With a user-friendly interface you can easily create and manage your to-do lists. Whether you're a busy professional, a student, or just someone looking to stay on top of their to-dos, this app is the perfect solution for managing your tasks and staying productive.</p>
+                  </div>
+                </div>
+            </div>
+            <div className="img-card-container">
+              <div className="img-card" onClick={() => handleModal('modal2')}>
+                <div className="overlay"></div>
+                <div className="info">
+                  <h3>Keeper</h3>
+                  <span>Organize Your Notes and Ideas</span>
+                </div>
+                <img src={P2a} alt="project-img" />
+              </div>
+                <div className={`modal ${modals.modal2 ? 'show active portfolio-model flex-center' : 'hide portfolio-model flex-center'}`} >
+                  <div className="portfolio-model-body">
+                    <i className="fas fa-times portfolio-close-btn" onClick={handleCloseModals}></i>
+                    <h3>Keeper</h3>
+                    <img src={P2b} alt="model-img" />
+                    <p>Designed for organizing and managing your notes, ideas, and information. It's an essential tool for students, professionals, and anyone looking to keep their thoughts, information and ideas organized and accessible anytime, anywhere.</p>
+                  </div>
+                </div>
+            </div>
+            <div className="img-card-container">
+              <div className="img-card" onClick={() => handleModal('modal3')}>
+                <div className="overlay"></div>
+                <div className="info">
+                  <h3>Simon Game</h3>
+                  <span>Challenge Your Memory and Reflexes</span>
+                </div>
+                <img src={P3a} alt="project-img" />
+              </div>
+                <div className={`modal ${modals.modal3 ? 'show active portfolio-model flex-center' : 'hide portfolio-model flex-center'}`} >
+                  <div className="portfolio-model-body">
+                    <i className="fas fa-times portfolio-close-btn" onClick={handleCloseModals}></i>
+                    <h3>Simon Game</h3>
+                    <img src={P3b} alt="model-img" />
+                    <p>A Simon game is an electronic game of memory skill. The device creates a series of tones and lights and requires a user to repeat the sequence. The user has to repeat the sequence correctly before the sequence becomes longer and more complex, and the user has to remember the correct sequence to repeat it correctly. The game typically has four colored buttons, each producing a particular tone when it is pressed or lit. The object of the game is to repeat the sequence of lights and tones that the device generates in the correct order. </p>
                   </div>
                 </div>
             </div>
@@ -85,4 +122,4 @@ function portfolio() {
   )
 }
 
-export default portfolio
+export default Portfolio

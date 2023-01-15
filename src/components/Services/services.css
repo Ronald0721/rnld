@@ -9,7 +9,7 @@
 
 .service-list{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr)); /* 255px (First 1fr)*/
     max-width: 100%;
     margin: 0 auto;
     gap: 20px;
@@ -64,7 +64,7 @@
     transition: 3s ease;
 }
 
-/* .service-modal.active {
+.service-modal.active {
     visibility: visible;
     opacity: 1;
 }
@@ -109,4 +109,4 @@
 
 .service-modal-body ul li i {
     color: var(--second-color);
-} */
+}

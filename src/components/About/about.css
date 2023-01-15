@@ -47,15 +47,7 @@
     column-gap: 30px;
 }
 
-.about-info .professional-list .list-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 15px;
-    margin-bottom: 20px;
-}
-
-.about-info .professional-list .list-item h3{
+h3 {
     font-size: 2.5em;
     font-weight: 700;
 }
@@ -63,6 +55,14 @@
 .about-info .professional-list .list-item span{
     color: var(--third-color);
     font-size: var(--small-font-size);
+}
+
+.about-info .professional-list .list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 15px;
+    margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1070px){

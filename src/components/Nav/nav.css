@@ -102,7 +102,7 @@ nav.sticky .nav-bar {
 
 .nav-close-btn{
     position: absolute;
-    background: url(../assets/close-btn.png) no-repeat;
+    background: url(../Assets/close-btn.png) no-repeat;
     filter: var(--color-filter);
     background-size: 12px;
     background-position: center;
@@ -115,7 +115,7 @@ nav.sticky .nav-bar {
 }
 
   .nav-menu-btn {
-    background: url(../assets/menu-btn.png) no-repeat;
+    background: url(../Assets/menu-btn.png) no-repeat;
     filter: var(--color-filter);
     background-size: 30px;
     background-position: center;
@@ -123,5 +123,9 @@ nav.sticky .nav-bar {
     height: 40px;
     cursor: pointer;
     display: block;
+  }
+
+  .nav-items a:not(:last-child) {
+    margin-right: 0px;
   }
 }
