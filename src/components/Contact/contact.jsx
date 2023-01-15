@@ -41,7 +41,7 @@ const Contact = () => {
             </ul>
           </div>
           <div className="contact-right">
-            <p>I'm always open to discussing product <br /><span>design work or partnerships.</span></p>
+            <p>I'm always open to discussing product, <br />design work, or partnerships.</p>
             <form action="" className="contact-form"  ref={form} onSubmit={sendEmail}>
               <div className="first-row">
                 <input type="text" name="name" placeholder="Your full Name" required/>

@@ -9,8 +9,6 @@ function skills() {
         <h2 className="section-title-02">Skills</h2>
         <div className="content">
           <div className="skills-description">
-            <h3>Education & Skills</h3>
-            <p>For more than 5 years our experts have been accomplishing enough with modern Web Development, new generation web and app programming language.</p>
           </div>
           <div className="skills-info education-all">
             <div className="education">

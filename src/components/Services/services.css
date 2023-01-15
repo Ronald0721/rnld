@@ -43,7 +43,7 @@
 }
 
 .service-card .learn-more-btn i{
-    transition: .3s ease;
+    transition: .1s ease;
 }
 
 .service-card:hover .learn-more-btn i{
@@ -61,7 +61,7 @@
     backdrop-filter: blur(10px);
     visibility: hidden;
     opacity: 0;
-    transition: 3s ease;
+    transition: 1s ease;
 }
 
 .service-modal.active {
@@ -78,7 +78,7 @@
     margin: 20px;
     padding: 40px;
     transform: translateY(-50px);
-    transition: .5s ease;
+    transition: .1s ease;
 }
 
 .service-modal.active .service-modal-body {
