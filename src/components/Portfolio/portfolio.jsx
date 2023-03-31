@@ -79,7 +79,7 @@ function Portfolio() {
                 <div className={`modal ${modals.modal2 ? 'show active portfolio-model flex-center' : 'hide portfolio-model flex-center'}`} >
                   <div className="portfolio-model-body">
                     <i className="fas fa-times portfolio-close-btn" onClick={handleCloseModals}></i>
-                    <h3>SmartWrist</h3>
+                    <h3>E-commerce API</h3>
                     <img src={P4b} alt="model-img" />
                     <p>This E-commerce API simplifies online store management with basic CRUD operations for products and a cart feature for easy checkout. This API enables you to manipulate product information such as stock and user data, making it a flexible tool for businesses of all sizes. Whether you're managing inventory or updating user data, this E-commerce API provides the functionality you need to grow your online store.</p>
                     <br />
@@ -124,6 +124,8 @@ function Portfolio() {
                     <h3>Keeper</h3>
                     <img src={P2b} alt="model-img" />
                     <p>Designed for organizing and managing your notes, ideas, and information. It's an essential tool for students, professionals, and anyone looking to keep their thoughts, information and ideas organized and accessible anytime, anywhere.</p>
+                    <br />
+                    <h4><a  href="https://z82ivs.csb.app/" target="_blank" rel="noreferrer">Live Demo   </a><i className="fas fa-long-arrow-alt-right"></i></h4>
                   </div>
                 </div>
             </div>
@@ -161,9 +163,11 @@ function Portfolio() {
                 <div className={`modal ${modals.modal6 ? 'show active portfolio-model flex-center' : 'hide portfolio-model flex-center'}`} >
                   <div className="portfolio-model-body">
                     <i className="fas fa-times portfolio-close-btn" onClick={handleCloseModals}></i>
-                    <h3>Simon Game</h3>
-                    <img src={P3b} alt="model-img" />
-                    <p>A Simon game is an electronic game of memory skill. The device creates a series of tones and lights and requires a user to repeat the sequence. The user has to repeat the sequence correctly before the sequence becomes longer and more complex, and the user has to remember the correct sequence to repeat it correctly. The game typically has four colored buttons, each producing a particular tone when it is pressed or lit. The object of the game is to repeat the sequence of lights and tones that the device generates in the correct order. </p>
+                    <h3>Rock Paper Scissors Game</h3>
+                    <img src={P6b} alt="model-img" />
+                    <p>Rock Paper Scissors is a classic hand game that is played between two people. The game has three possible outcomes: a draw, a win for the player, or a win for the opponent. In this project, we created a Rock Paper Scissors game that you can play against the computer. Simply choose your move, and see if you can beat the computer! </p>
+                    <br />
+                    <h4><a  href="https://ronald0721.github.io/rock-paper-scissors/" target="_blank" rel="noreferrer">Live Demo   </a><i className="fas fa-long-arrow-alt-right"></i></h4>
                   </div>
                 </div>
             </div>
