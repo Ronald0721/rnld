@@ -82,6 +82,13 @@
     font-weight: 500;
 }
 
+.icon {
+    color: var(--second-color);
+    font-size: 1.2rem;
+    display: flex;
+    align-content: center;
+}
+
 .bar .line{
     position: relative;
     width: 100%;
@@ -101,23 +108,23 @@
 }
 
 .bar .html:before{
-    width: 90%;
+    width: 100%;
     }
 
 .bar .css:before{
-    width: 70%;
+    width: 100%;
 }
 
 .bar .javascript:before{
-    width: 70%;
+    width: 100%;
 }
 
 .bar .bootstrap:before{
-    width: 30%;
+    width: 100%;
 }
 
 .bar .react:before{
-    width: 30%;
+    width: 100%;
 }
 
 .experience-card {

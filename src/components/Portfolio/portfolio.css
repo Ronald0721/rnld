@@ -91,7 +91,7 @@
     border-radius: 10px;
     box-shadow: var(--box-shadow);
     transform: translateY(-50px);
-    transition: .5s ease;
+    transition: .1s ease;
 }
 
 .porfolio-model.active .portfolio-model-body {

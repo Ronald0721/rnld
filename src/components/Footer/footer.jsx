@@ -8,7 +8,7 @@ function footer() {
         <div className="footer-container">
             <div className="about group">
                 <h2><a href='#home'>Ronald</a></h2>
-                <p>Front-End Developer</p>
+                <p>Full Stack Web Developer</p>
                 <a href="#about">About Me</a>
             </div>
             <div className="hr"></div>

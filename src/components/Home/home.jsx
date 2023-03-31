@@ -76,7 +76,7 @@ function Home() {
       </div>
         <div class="info">
         <h2>Hi, I am Ronald</h2>
-        <h3>Front-End Developer</h3>
+        <h3>Full Stack Web Developer</h3>
         <p>I bring the design and functionality of the site to life. </p>
         <a href="#contact" class="btn">Contact Me  <i class="fas fa-arrow-circle-right"></i></a>
         </div>
