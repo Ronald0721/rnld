@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/rnld/static/css/main.35363694.css",
-    "main.js": "/rnld/static/js/main.132a7143.js",
+    "main.js": "/rnld/static/js/main.4ef4b2b4.js",
     "static/media/rps.png": "/rnld/static/media/rps.f9227a92815d22b8e85e.png",
     "static/media/rps2.png": "/rnld/static/media/rps2.4d6333c796223f5492f1.png",
     "static/media/Keeper.png": "/rnld/static/media/Keeper.13ff151a9d8cc4b9498b.png",
@@ -10,7 +10,7 @@
     "static/media/SmartWrist.png": "/rnld/static/media/SmartWrist.e8447a0f89b9b5d72091.png",
     "static/media/smartwrist1.png": "/rnld/static/media/smartwrist1.32397d636a29e79f53ce.png",
     "static/media/2x2.jpg": "/rnld/static/media/2x2.5490908729dc8f5822de.jpg",
-    "static/media/SANDAGON, RONALD (CV).pdf": "/rnld/static/media/SANDAGON, RONALD (CV).27d35a59c6e8c892bda5.pdf",
+    "static/media/Ronald Sandagon.pdf": "/rnld/static/media/Ronald Sandagon.46e4aef8396154a664e6.pdf",
     "static/media/TD L.png": "/rnld/static/media/TD L.18b7d4ed53a6961d424e.png",
     "static/media/Simon.png": "/rnld/static/media/Simon.56a9550fbcf4a1f836c3.png",
     "static/media/Keeper N.png": "/rnld/static/media/Keeper N.e46caf385354f4f8218d.png",
@@ -20,10 +20,10 @@
     "static/media/e-comAPI2.png": "/rnld/static/media/e-comAPI2.3960222d74901e0a9610.png",
     "index.html": "/rnld/index.html",
     "main.35363694.css.map": "/rnld/static/css/main.35363694.css.map",
-    "main.132a7143.js.map": "/rnld/static/js/main.132a7143.js.map"
+    "main.4ef4b2b4.js.map": "/rnld/static/js/main.4ef4b2b4.js.map"
   },
   "entrypoints": [
     "static/css/main.35363694.css",
-    "static/js/main.132a7143.js"
+    "static/js/main.4ef4b2b4.js"
   ]
 }
