@@ -1,6 +1,6 @@
 import React from 'react';
 import "./about.css";
-import CV from "../Assets/SANDAGON, RONALD (CV).pdf";
+import CV from "../Assets/Ronald Sandagon.pdf";
 import Img from "../Assets/2x2.jpg"
 
 function about() {
