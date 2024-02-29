@@ -4,7 +4,7 @@ import {ImHtmlFive} from "react-icons/im";
 import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaBootstrap, FaNodeJs } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiReact } from "react-icons/si";
+import { SiExpress, SiMongodb, SiNuxtdotjs, SiReact, SiVuedotjs } from "react-icons/si";
 
 function skills() {
   return (
@@ -102,6 +102,22 @@ function skills() {
                   <div className="info">
                     <span>React.js</span>
                     <span className="icon" ><SiReact/></span>
+                    {/* <span>Basic</span> */}
+                  </div>
+                  <div className="line react"></div>
+                </li>
+                <li className="bar">
+                  <div className="info">
+                    <span>Vue.js</span>
+                    <span className="icon" ><SiVuedotjs/></span>
+                    {/* <span>Basic</span> */}
+                  </div>
+                  <div className="line react"></div>
+                </li>
+                <li className="bar">
+                  <div className="info">
+                    <span>Nuxt.js</span>
+                    <span className="icon" ><SiNuxtdotjs/></span>
                     {/* <span>Basic</span> */}
                   </div>
                   <div className="line react"></div>
