@@ -20,14 +20,14 @@ function about() {
                 A <span>Full Stack Developer</span>
               </h4>
               <p>
-                My goal is to create websites that not only look great but also
-                perform well in terms of speed and accessibility and will
-                provide an enjoyable experience for visitors.{" "}
+                My goal is to create web applications that not only look great
+                but also perform well in terms of speed and accessibility and
+                will provide an enjoyable experience for users.{" "}
               </p>
             </div>
             <ul className="professional-list">
               <li className="list-items">
-                <h3>8+</h3>
+                <h3>10+</h3>
                 <span>
                   Months of
                   <br />
