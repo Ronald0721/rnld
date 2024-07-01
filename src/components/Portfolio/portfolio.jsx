@@ -8,10 +8,10 @@ import P3a from "../Assets/SmartWrist.png";
 import P3b from "../Assets/smartwrist1.png";
 import P4a from "../Assets/e-comAPI.png";
 import P4b from "../Assets/e-comAPI2.png";
-import P5a from "../Assets/Simon.png";
-import P5b from "../Assets/Simon G.png";
-import P6a from "../Assets/rps.png";
-import P6b from "../Assets/rps2.png";
+// import P5a from "../Assets/Simon.png";
+// import P5b from "../Assets/Simon G.png";
+// import P6a from "../Assets/rps.png";
+// import P6b from "../Assets/rps2.png";
 
 function Portfolio() {
   const [modals, setModals] = useState({
@@ -233,7 +233,7 @@ function Portfolio() {
               </div>
             </div>
 
-            <div className="img-card-container">
+            {/* <div className="img-card-container">
               <div className="img-card" onClick={() => handleModal("modal5")}>
                 <div className="overlay"></div>
                 <div className="info">
@@ -278,9 +278,9 @@ function Portfolio() {
                   </h4>
                 </div>
               </div>
-            </div>
+            </div> */}
 
-            <div className="img-card-container">
+            {/* <div className="img-card-container">
               <div className="img-card" onClick={() => handleModal("modal6")}>
                 <div className="overlay"></div>
                 <div className="info">
@@ -324,7 +324,7 @@ function Portfolio() {
                   </h4>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

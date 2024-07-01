@@ -11,12 +11,15 @@ const Contact = () => {
     setIsLoading(true);
     e.preventDefault();
 
+    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+    console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+    console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
     emailjs
       .sendForm(
-        "service_i2c339m",
-        "template_o1jxqa7",
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
-        "2XSJYPYkRPnPG6LyH"
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         (result) => {

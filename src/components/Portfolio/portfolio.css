@@ -7,7 +7,7 @@
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     max-width: 100%;
     gap: 35px;
-    margin: 0 auto;
+    margin: 0 150px;
 }
 
 .portfolio-list .img-card {
@@ -171,6 +171,10 @@
         font-size: 0.8rem;
         line-height: 50px;
     }
+
+    .portfolio-list {
+        margin: 0 auto;
+    }
 }
 
 @media screen and (max-width: 730px){
@@ -185,6 +189,10 @@
 
     .contact-card .contact-btn .btn {
         font-size: 0.8rem;
+    }
+
+    .portfolio-list {
+        margin: 0 auto;
     }
 }
 
