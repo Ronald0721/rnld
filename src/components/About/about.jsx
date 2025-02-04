@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import CV from "../Assets/Sandagon,Ronald.pdf";
+import CV from "../Assets/Ronald_Sandagon_Developer_CV.pdf";
 import Img from "../Assets/2x2.jpg";
 
 function about() {
@@ -27,9 +27,9 @@ function about() {
             </div>
             <ul className="professional-list">
               <li className="list-items">
-                <h3>10+</h3>
+                <h3>1+</h3>
                 <span>
-                  Months of
+                  Years of
                   <br />
                   Experience
                 </span>
@@ -43,7 +43,7 @@ function about() {
                 </span>
               </li>
               <li className="list-items">
-                <h3>6</h3>
+                <h3>7</h3>
                 <span>
                   Success
                   <br />

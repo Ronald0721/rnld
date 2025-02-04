@@ -6,12 +6,14 @@ import Services from "./components/Services/services";
 import Portfolio from "./components/Portfolio/portfolio";
 import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
+import { Toaster } from 'sonner';
 
 function App() {
 
   return (
     <div className="App">
       <header className="App-header">
+        <Toaster position="top-right" />
         <Nav />
         <Home />
         <About />

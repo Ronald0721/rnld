@@ -2,37 +2,33 @@ import React, { useRef, useState } from "react";
 import "./contact.css";
 import CircularProgress from "@mui/material/CircularProgress";
 import emailjs from "@emailjs/browser";
+import { toast } from "sonner";
 
 const Contact = () => {
   const form = useRef();
   const [isLoading, setIsLoading] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = async (e) => {
     setIsLoading(true);
     e.preventDefault();
 
-    console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
-    console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
-    console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
-    emailjs
-      .sendForm(
+    try {
+      await emailjs.sendForm(
         process.env.REACT_APP_EMAILJS_SERVICE_ID,
         process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
         form.current,
         process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setIsLoading(false);
-        },
-        (error) => {
-          console.log(error.text);
-        }
       );
 
-    e.target.reset();
+      toast.success("Email sent successfully!");
+    } catch (error) {
+      toast.error("Failed to send email. Please try again.");
+    } finally {
+      setIsLoading(false);
+      e.target.reset();
+    }
   };
+
   return (
     <section id="contact" className="contact section">
       <div className="container flex-center">
@@ -122,7 +118,7 @@ const Contact = () => {
                   placeholder="Message"
                 ></textarea>
               </div>
-              <button className="btn" type="submit">
+              <button disabled={isLoading} className="btn" type="submit">
                 {isLoading ? (
                   <CircularProgress sx={{ color: "white" }} size={20} />
                 ) : (

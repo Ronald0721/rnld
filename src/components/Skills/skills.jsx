@@ -1,10 +1,18 @@
-import React from 'react';
+import React from "react";
 import "./skills.css";
-import {ImHtmlFive} from "react-icons/im";
+import { ImHtmlFive } from "react-icons/im";
 import { IoLogoCss3 } from "react-icons/io";
 import { IoLogoJavascript } from "react-icons/io5";
 import { FaBootstrap, FaNodeJs } from "react-icons/fa";
-import { SiExpress, SiMongodb, SiNuxtdotjs, SiReact, SiVuedotjs } from "react-icons/si";
+import {
+  SiExpress,
+  SiMongodb,
+  SiNuxtdotjs,
+  SiReact,
+  SiVuedotjs,
+  SiTypescript,
+  SiDocker,
+} from "react-icons/si";
 
 function skills() {
   return (
@@ -13,39 +21,56 @@ function skills() {
         <h1 className="section-title-01">Skills</h1>
         <h2 className="section-title-02">Skills</h2>
         <div className="content">
-          <div className="skills-description">
-          </div>
+          <div className="skills-description"></div>
           <div className="skills-info education-all">
             <div className="education">
-              <h4><label>Education</label></h4>
+              <h4>
+                <label>Education</label>
+              </h4>
               <ul className="edu-list">
-              <li className="item">
+                <li className="item">
                   <span className="year">2023-2023</span>
-                  <p><span>Web Development</span> - Zuitt Coding Bootcamp</p>
-                  <p><span>Final Grade - 100</span></p>
+                  <p>Web Development</p>
+                  <p className="school">Zuitt - Coding Bootcamp</p>
+                  <p>
+                    <span>Final Grade - 100</span>
+                  </p>
                 </li>
                 <li className="item">
                   <span className="year">2015-2019</span>
-                  <p><span>Bachelor's Degree</span> - Bicol University Polangui Campus</p>
-                  <p><span>GWA - 1.80</span></p>
+                  <p>Bachelor's Degree</p>
+                  <p className="school">Bicol University Polangui Campus</p>
+                  <p>
+                    <span>GWA - 1.80</span>
+                  </p>
                 </li>
-                <li className="item">
+                {/* <li className="item">
                   <span className="year">2011-2015</span>
-                  <p><span>Secondary Education</span> - Polangui General Comprehensive High School</p>
+                  <p>
+                    <span>Secondary Education</span> - Polangui General
+                    Comprehensive High School
+                  </p>
                 </li>
                 <li className="item">
                   <span className="year">2005-2011</span>
-                  <p><span>Elementary Education</span> - Pinagdapugan Elementary School</p>
-                </li>
+                  <p>
+                    <span>Elementary Education</span> - Pinagdapugan Elementary
+                    School
+                  </p>
+                </li> */}
               </ul>
             </div>
             <div className="education">
-              <h4><label>Skills</label></h4>
+              <h4>
+                <label>Skills</label>
+              </h4>
               <ul className="bars">
                 <li className="bar">
                   <div className="info">
                     <span>HTML</span>
-                    <span className="icon" ><ImHtmlFive/></span>
+                    <span className="icon">
+                      <ImHtmlFive />
+                    </span>
                     {/* <span>Advanced</span> */}
                   </div>
                   <div className="line html"></div>
@@ -53,7 +78,9 @@ function skills() {
                 <li className="bar">
                   <div className="info">
                     <span>CSS</span>
-                    <span className="icon" ><IoLogoCss3/></span>
+                    <span className="icon">
+                      <IoLogoCss3 />
+                    </span>
                     {/* <span>Intermediate</span> */}
                   </div>
                   <div className="line css"></div>
@@ -61,7 +88,9 @@ function skills() {
                 <li className="bar">
                   <div className="info">
                     <span>JavaScript</span>
-                    <span className="icon" ><IoLogoJavascript/></span>
+                    <span className="icon">
+                      <IoLogoJavascript />
+                    </span>
                     {/* <span>Intermediate</span> */}
                   </div>
                   <div className="line javascript"></div>
@@ -69,7 +98,9 @@ function skills() {
                 <li className="bar">
                   <div className="info">
                     <span>Bootstrap</span>
-                    <span className="icon" ><FaBootstrap/></span>
+                    <span className="icon">
+                      <FaBootstrap />
+                    </span>
                     {/* <span>Basic</span> */}
                   </div>
                   <div className="line bootstrap"></div>
@@ -77,7 +108,9 @@ function skills() {
                 <li className="bar">
                   <div className="info">
                     <span>Node.js</span>
-                    <span className="icon" ><FaNodeJs/></span>
+                    <span className="icon">
+                      <FaNodeJs />
+                    </span>
                     {/* <span>Basic</span> */}
                   </div>
                   <div className="line react"></div>
@@ -85,7 +118,9 @@ function skills() {
                 <li className="bar">
                   <div className="info">
                     <span>Express.js</span>
-                    <span className="icon" ><SiExpress/></span>
+                    <span className="icon">
+                      <SiExpress />
+                    </span>
                     {/* <span>Basic</span> */}
                   </div>
                   <div className="line react"></div>
@@ -93,7 +128,9 @@ function skills() {
                 <li className="bar">
                   <div className="info">
                     <span>MongoDB</span>
-                    <span className="icon" ><SiMongodb/></span>
+                    <span className="icon">
+                      <SiMongodb />
+                    </span>
                     {/* <span>Basic</span> */}
                   </div>
                   <div className="line react"></div>
@@ -101,7 +138,9 @@ function skills() {
                 <li className="bar">
                   <div className="info">
                     <span>React.js</span>
-                    <span className="icon" ><SiReact/></span>
+                    <span className="icon">
+                      <SiReact />
+                    </span>
                     {/* <span>Basic</span> */}
                   </div>
                   <div className="line react"></div>
@@ -109,7 +148,9 @@ function skills() {
                 <li className="bar">
                   <div className="info">
                     <span>Vue.js</span>
-                    <span className="icon" ><SiVuedotjs/></span>
+                    <span className="icon">
+                      <SiVuedotjs />
+                    </span>
                     {/* <span>Basic</span> */}
                   </div>
                   <div className="line react"></div>
@@ -117,7 +158,29 @@ function skills() {
                 <li className="bar">
                   <div className="info">
                     <span>Nuxt.js</span>
-                    <span className="icon" ><SiNuxtdotjs/></span>
+                    <span className="icon">
+                      <SiNuxtdotjs />
+                    </span>
+                    {/* <span>Basic</span> */}
+                  </div>
+                  <div className="line react"></div>
+                </li>
+                <li className="bar">
+                  <div className="info">
+                    <span>Typescript</span>
+                    <span className="icon">
+                      <SiTypescript />
+                    </span>
+                    {/* <span>Basic</span> */}
+                  </div>
+                  <div className="line react"></div>
+                </li>
+                <li className="bar">
+                  <div className="info">
+                    <span>Docker</span>
+                    <span className="icon">
+                      <SiDocker />
+                    </span>
                     {/* <span>Basic</span> */}
                   </div>
                   <div className="line react"></div>
@@ -125,15 +188,19 @@ function skills() {
               </ul>
             </div>
             <div className="education">
-              <h4><label>Awards</label></h4>
+              <h4>
+                <label>Awards</label>
+              </h4>
               <ul className="edu-list">
                 <li className="item">
                   <span className="year">2023</span>
                   <p>Best in Capstone Project</p>
+                  <p className="school">Zuitt - Coding Bootcamp</p>
                 </li>
                 <li className="item">
                   <span className="year">2018-2019</span>
                   <p>Academic Awards</p>
+                  <p className="school">Bicol University Polangui</p>
                 </li>
               </ul>
             </div>
@@ -168,7 +235,7 @@ function skills() {
         </div>
       </div>
     </section>
-  )
+  );
 }
 
-export default skills
+export default skills;
