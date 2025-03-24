@@ -96,7 +96,7 @@ function Home() {
         <div class="info">
           <h2>Hi, I am Ronald</h2>
           <h3>Full Stack Developer</h3>
-          <p>I bring the design and functionality of an app to life. </p>
+          <p>I bring the design and functionality of an app to life </p>
           <a href="#contact" class="btn">
             Contact Me <i class="fas fa-arrow-circle-right"></i>
           </a>
